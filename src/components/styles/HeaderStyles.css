@@ -1,0 +1,43 @@
+:root {
+    --blue-one: #03045E;
+    --blue-two: #023e8a;
+    --blue-three: #0077b6;
+    --blue-four: #0096c7;
+    --blue-five: #00b4d8;
+    --blue-six: #48cae4;
+    --blue-seven: #90e0ef;
+    --blue-eight: #ade8f4;
+    --blue-nine: #caf0f8;
+    --white-one: #fffffc;
+}
+
+body {
+    background-color: var(--white-one);
+}
+
+#header {
+    color: var(--blue-three);
+    text-shadow: 1%;
+    font-weight: 500;
+    font-size: 60px;
+    background-color: var(--white-one);
+    text-decoration: none;
+}
+
+#header-p {
+    margin-left: 11%;
+    margin-top: -3%;
+    color: darkslategrey;
+    width:100%;
+    font-size: 17px;
+    text-align: center;
+}
+
+.smoothed {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+#basic-nav-dropdown {
+    margin-right: 7vw;
+}
