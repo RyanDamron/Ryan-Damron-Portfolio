@@ -1,4 +1,5 @@
 import React from 'react';
+import {Link} from 'react-router-dom';
 import './styles/HeaderStyles.css';
 import '../components/styles/FontStyles.css';
 import Container from 'react-bootstrap/Container';
@@ -12,7 +13,7 @@ import NavDropdown from 'react-bootstrap/NavDropdown';
 
 
 
-function Header ()  {
+function Header() {
   // const [currentPage, setCurrentPage] = useState('Home');
   // const renderPage = () => {
   //   if (currentPage === 'About') {
@@ -23,28 +24,28 @@ function Header ()  {
   //   }
   // };
   // const handlePageChange = (page) => setCurrentPage(page)
-    return (
+  return (
 
-        
-        <div className='shadow-sm d-flex flex-wrap justify-content-between' id='header-name'>
-          <div>
-            <a href='Home' className='google-font-1 ms-4' id='header' >Ryan Damron</a>
-            <p className='google-font-2' id='header-p'>Full-Stack MERN Web Developer</p>
-            </div>
-            <Navbar expand="lg">
+
+    <div className='shadow-sm d-flex flex-wrap justify-content-between' id='header-name'>
+      <div>
+        <Link to='/home' className='google-font-1 ms-4' id='header' >Ryan Damron</Link>
+        <p className='google-font-2' id='header-p'>Full-Stack MERN Web Developer</p>
+      </div>
+      <Navbar expand="lg">
         <Container>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="me-auto" activeKey="Home">
-            <Nav.Link href="Home" >Home</Nav.Link>
-              <Nav.Link href="about" >About Me</Nav.Link>
-              <Nav.Link href="contact">Contact Me</Nav.Link>
+              <Nav.Link as={Link} to="/home">Home</Nav.Link>
+              <Nav.Link as={Link} to="/about">About Me</Nav.Link>
+              <Nav.Link as={Link} to="/contact">Contact Me</Nav.Link>
               <NavDropdown title="Projects" id="basic-nav-dropdown">
-                <NavDropdown.Item href="https://us-opencourts.herokuapp.com/"target="_blank" rel="noreferrer">US OpenCourts</NavDropdown.Item>
-                <NavDropdown.Item href="https://ryandamron.github.io/Weather-Voyage/"target="_blank" rel="noreferrer">
+                <NavDropdown.Item href="https://us-opencourts.herokuapp.com/" target="_blank" rel="noreferrer">US OpenCourts</NavDropdown.Item>
+                <NavDropdown.Item href="https://ryandamron.github.io/Weather-Voyage/" target="_blank" rel="noreferrer">
                   Weather Voyage
                 </NavDropdown.Item>
-                <NavDropdown.Item href="https://crothos.github.io/flashcard-app/"target="_blank" rel="noreferrer">FlashFacts</NavDropdown.Item>
+                <NavDropdown.Item href="https://crothos.github.io/flashcard-app/" target="_blank" rel="noreferrer">FlashFacts</NavDropdown.Item>
                 <NavDropdown.Item href="https://github.com/RyanDamron/Text-Editor" target="_blank" rel="noreferrer">
                   Just Another Text Editor
                 </NavDropdown.Item>
@@ -60,8 +61,8 @@ function Header ()  {
           </Navbar.Collapse>
         </Container>
       </Navbar>
-        </div>
-    )
+    </div>
+  )
 };
 
 export default Header;

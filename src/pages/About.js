@@ -5,6 +5,7 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 
 function About() {
+    console.log('The about page')
     return (
         <div className='p-3 google-font-1 rounded' id='about-me'>
             <div>
