@@ -34,9 +34,9 @@ export default function Home() {
             {/* <Header /> */}
             <Switch>
                 <Route exact path='/' component={Carousel} />
-                <Route exact path='/home' component={Carousel} />
-                <Route exact path='/about' component={About}/>
-                <Route exact path='/contact' component={Contact} />
+                <Route  path='/home' component={Carousel} />
+                <Route  path='/about' component={About}/>
+                <Route  path='/contact' component={Contact} />
             </Switch>
         </Router>
     //         <Router>
