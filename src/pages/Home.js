@@ -4,7 +4,7 @@ import '../components/styles/FontStyles.css';
 import './styles/AboutStyles.css';
 // import Container from 'react-bootstrap/Container';
 import Carousel from './Carousel'
-import Header from '../components/Header';
+// import Header from '../components/Header';
 import About from './About';
 import Contact from './Contact';
 // import Navigation from '../components/Navigation';
@@ -31,7 +31,7 @@ export default function Home() {
 //         const handlePageChange = (page) => setCurrentPage(page);
         return (
             <Router basename={process.env.PUBLIC_URL}>
-            <Header />
+            {/* <Header /> */}
             <Switch>
                 <Route exact path='/' component={Carousel} />
                 <Route exact path='/home' component={Carousel} />

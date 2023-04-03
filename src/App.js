@@ -3,7 +3,7 @@ import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 // import logo from './logo.svg';
 // import './App.css';
 
-// import Header from './components/Header';
+import Header from './components/Header';
 // import Footer from './components/Footer';
 // import Navigation from './components/Navigation';
 import Contact from './pages/Contact';
@@ -20,7 +20,7 @@ function App() {
   return (
 
     <Router basename={process.env.PUBLIC_URL}>
-      {/* <Header/> */}
+      <Header/>
       <Switch>
         <Route exact path="/" component={Home} />
         <Route exact path='/home' component={Home} />
