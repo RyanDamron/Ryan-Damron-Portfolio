@@ -29,7 +29,7 @@ function Header() {
 
     <div className='shadow-sm d-flex flex-wrap justify-content-between' id='header-name'>
       <div>
-        <Link to='/home' className='google-font-1 ms-4' id='header' >Ryan Damron</Link>
+        <Link to='/' className='google-font-1 ms-4' id='header' >Ryan Damron</Link>
         <p className='google-font-2' id='header-p'>Full-Stack MERN Web Developer</p>
       </div>
       <Navbar expand="lg">
@@ -37,7 +37,7 @@ function Header() {
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="me-auto" activeKey="Home">
-              <Nav.Link as={Link} to="/home">Home</Nav.Link>
+              <Nav.Link as={Link} to="/">Home</Nav.Link>
               <Nav.Link as={Link} to="/about">About Me</Nav.Link>
               <Nav.Link as={Link} to="/contact">Contact Me</Nav.Link>
               <NavDropdown title="Projects" id="basic-nav-dropdown">
