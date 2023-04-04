@@ -6,26 +6,10 @@ import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
-// import About from '../pages/About';
-// import Contact from '../pages/About';
-// import Home from '../pages/Home';
-
-
 
 
 function Header() {
-  // const [currentPage, setCurrentPage] = useState('Home');
-  // const renderPage = () => {
-  //   if (currentPage === 'About') {
-  //     return <About/>;
-  //   }
-  //   if (currentPage === 'Contact') {
-  //     return <Contact/>
-  //   }
-  // };
-  // const handlePageChange = (page) => setCurrentPage(page)
   return (
-
 
     <div className='shadow-sm d-flex flex-wrap justify-content-between' id='header-name'>
       <div>
